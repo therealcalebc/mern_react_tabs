@@ -1,0 +1,63 @@
+/* .Tab {
+	display: inline-block;
+	min-width: 10%;
+	width: fit-content;
+	height: 100%;
+	margin: 0 1% 0 0;
+	padding: 1px;
+	outline: 1px dotted hotpink;
+}
+
+button {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 1% 2%;
+	border: 1px solid grey;
+} */
+
+.Tab {
+	min-width: 10%;
+	width: fit-content;
+	height: 100%;
+	margin: 0 1% 1% 0;
+	padding: 1% 2%;
+	border: 1px solid grey;
+}
+
+.active {
+	background-color: black;
+	color: whitesmoke;
+	font-size: 2.2em;
+}
+
+.inactive {
+	background-color: white;
+	color: black;
+	font-size: 2em;
+	transition: background-color 0.25s, font-size 0.25s;
+}
+
+.inactive:hover {
+	background-color: aliceblue;
+	font-size: 2.2em;
+}
+
+.active:focus {
+	animation: Tab-expand 0.25s ease 0s 1 normal forwards;
+}
+
+@keyframes Tab-expand {
+	from {
+		transform: scale(1);
+		/* background-color: white;
+		color: black;
+		font-size: 2em; */
+	}
+	to {
+		transform: scale(1.1);
+		/* background-color: black;
+		color: whitesmoke;
+		font-size: 2.2em; */
+	}
+}
