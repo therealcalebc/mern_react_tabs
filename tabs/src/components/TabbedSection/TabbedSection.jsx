@@ -18,9 +18,6 @@ const TabbedSection = ({ tabs }) => {
 						/>
 					);
 				})}
-				{/* <Tab label='xxxxxxTab1xxxxxx' isActive={false} />
-				<Tab label='Tab2' isActive={true} />
-				<Tab label='Tab3' isActive={false} /> */}
 			</div>
 			<div className={styles.TsBody}>
 				{currentTab >= 0 ? tabs[currentTab].content : ""}
@@ -30,5 +27,3 @@ const TabbedSection = ({ tabs }) => {
 };
 
 export default TabbedSection;
-
-//<div className={styles.TsBody}>Tab 2 content is showing here.</div>;

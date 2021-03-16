@@ -13,9 +13,3 @@ const Tab = (props) => {
 };
 
 export default Tab;
-
-/* <div className={styles.Tab}>
-	<button className={isActive ? styles.active : styles.inactive}>
-		{label}
-	</button>
-</div>; */
